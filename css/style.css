@@ -1,0 +1,192 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   padding: 25px 50px 25px 50px;
+   font-family: 'Lexend';
+   background-color: #c4bee0;
+}
+
+header {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+nav {
+    background-color: #577314;
+    border: thick;
+    align-self: end;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+    width: 100%;
+	padding-right: 20%
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 1px #0d0d0d;
+	font-size: 36px;
+}
+
+a:hover {
+	text-decoration: wavy;
+	color: #4a4949;
+	text-shadow: -1px -1px #c4bee0;
+}
+#logo {
+	width: 10%;
+}
+
+.name {
+    background-color: #a99dde;
+	text-align: center;
+	color: #6a51dd;
+	text-transform: lowercase;
+	font-size: 26px;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+
+#me {
+    margin: 50px;
+    border: 15px solid #6a51dd;
+    border-radius: 15px;
+}
+
+section {
+    text-align: center;
+    margin: 35px;
+
+}
+
+footer {
+    background-color: #577314;
+    width: 100%;
+    
+}
+
+/* inspiration page */
+
+.intro {
+    background-color: #a99dde;
+	text-align: center;
+	color: #6a51dd;
+	text-transform: lowercase;
+	font-size: 26px;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+
+.meow {
+    background-color: #a99dde;
+	text-align: center;
+	color: #6a51dd;
+	text-transform: lowercase;
+	font-size: 26px;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+
+}
+
+.meow:hover {
+	color: #577314;
+    transform: scaleX(5, 1.1);
+}
+
+
+
+.artistone {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.artistone img {
+    max-width: 150px;
+    height: auto;
+}
+
+.artisttwo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.artisttwo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.artistthree {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.artistthree img {
+    max-width: 150px;
+    height: auto;
+}
+
+h3 {
+    background-color: #577314;
+    display: flex;
+}
+
+h4 {
+    line-height: 30px;
+}
+
+#spotify-container {
+    width: 900px;
+    margin: 15px auto;
+    border: 15px solid #6a51dd;
+    border-radius: 25px;
+}
+
+
+/* top fives page */
+
+/*ol {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+    width: 100%;
+    padding-right: 50%;
+} */
+
+ol {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between
+}
+
+
+/*li {
+    text-align: center;
+    font-size: 18px;
+    gap: 50px;
+    position: absolute, top;
+}
+*/
+
+
+dl {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between
+}
