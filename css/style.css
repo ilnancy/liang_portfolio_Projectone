@@ -62,9 +62,12 @@ a:hover {
 }
 
 section {
-    text-align: center;
+    text-align: start;
     margin: 35px;
-
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between
 }
 
 footer {
