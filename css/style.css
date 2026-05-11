@@ -4,6 +4,23 @@
    box-sizing: border-box;
 }
 
+
+@media (min-width: 768px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
+}
+@media only screen and (min-width: 768px)
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+
 body {
    padding: 25px 50px 25px 50px;
    font-family: 'Lexend';
@@ -26,7 +43,10 @@ nav {
 	flex-wrap: nowrap;
 	justify-content: space-between;
     width: 100%;
-	padding-right: 20%
+	padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 1%;
 }
 
 a {
@@ -78,17 +98,13 @@ section {
 
 footer {
     background-color: #577314;
-    width: 100%;   
+    width: 100%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 1%;   
 }
 
-/* created by jereconjota*/
-
-#cat {
-  position: relative;
-  bottom: 5;
-}
-
-/* created by jereconjota*/
 
 /* inspiration page */
 
@@ -175,37 +191,33 @@ h4 {
 
 /* top fives page */
 
-/*ol {
-    display: flex;
-    flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-    width: 100%;
-    padding-right: 50%;
-} */
 
+/*
 .places ol {
     display: flex;
     flex-direction: row;
 	flex-wrap: nowrap;
+    flex-shrink: 1;
 	justify-content: space-between;
     padding: 25px;
 }
 
-ol {
-
-}
-
-
-
-/*li {
-    text-align: center;
-    font-size: 18px;
-    gap: 50px;
-    position: absolute, top;
-}
 */
 
+.places ol {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 15px 50px;
+    padding: 5px;
+    margin: 5%;
+}
+
+
+
+ul li {
+    padding: 1px;
+}
 
 dl {
     display: flex;
@@ -229,6 +241,99 @@ dl {
 
 /* hobby page */
 
+h5 {
+    width: 50%;
+    font-size: larger;
+
+}
+
+/* created by Christian Schaefer */
+
+.slider {
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #577314;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.slides > div:target {
+  transform: scale(0.8);
+}
+
+
+
+
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #577314;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #577314;
+}
+
+
+/* created by Christian Schaefer */
+
+
+
 .food {
     width: 50%;
     margin: 0 auto;
@@ -236,6 +341,7 @@ dl {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 15%;
 }
 
 .box {
@@ -244,6 +350,7 @@ dl {
     background: white;
     margin: 0px 14px;
     transition: 0.5s;
+    
 }
 
 .box:hover {
@@ -256,18 +363,6 @@ dl {
 .box img {
     width: 150px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
