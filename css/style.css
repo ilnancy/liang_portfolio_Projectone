@@ -96,18 +96,6 @@ section {
     margin-bottom: 50px;
 }
 
-footer {
-    background-color: #577314;
-    width: 100%;
-    padding-right: 1%;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    padding-left: 1%;   
-}
-
-
-/* inspiration page */
-
 .intro {
     background-color: #a99dde;
 	text-align: center;
@@ -133,6 +121,21 @@ footer {
 	color: #577314;
     transform: scaleX(5, 1.1);
 }
+
+
+
+footer {
+    background-color: #577314;
+    width: 100%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 1%;   
+}
+
+
+/* inspiration page */
+
 
 
 
