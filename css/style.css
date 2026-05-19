@@ -138,8 +138,6 @@ footer {
 /* inspiration page */
 
 
-
-
 .artistone {
     display: flex;
     align-items: center;
@@ -192,6 +190,47 @@ h4 {
     border: 15px solid #6a51dd;
     border-radius: 25px;
 }
+
+#inspired {
+  font-size: 20px;
+  padding: 5px;
+    animation-name: inspiredAnimate;
+    animation-duration: 5s;
+    animation-delay: .25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+/* created by Elisabeth Diang */
+@keyframes inspiredAnimate {
+    0%,
+  22%,
+  36%,
+  75% {
+    color: white;        
+    text-shadow: 0 0 0.6rem rgb(246, 163, 227), 0 0 1.5rem rgb(246, 163, 227),
+      -0.2rem 0.1rem 1rem #6a51dd, 0.2rem 0.1rem 1rem #6a51dd,
+      0 -0.5rem 2rem #6a51dd, 0 0.5rem 3rem #6a51dd;
+  }
+  28%,
+  33% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+}
+.flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+.fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+/* created by Elisabeth Diang */
 
 
 /* top fives page */
